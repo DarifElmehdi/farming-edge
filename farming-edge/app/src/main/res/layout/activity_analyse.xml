@@ -10,13 +10,11 @@
         android:id="@+id/selectPic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="73dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="250dp"
         android:text="Select Photo"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/takePic"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,14 +22,12 @@
         android:id="@+id/takePic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="87dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="42dp"
         android:text="Take Photo"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/selectPic"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -39,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="162dp"
         android:text="Analyse"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,24 +47,58 @@
         android:layout_width="299dp"
         android:layout_height="298dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="56dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectPic"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/colorButtonNormal" />
 
     <TextView
         android:id="@+id/Resultat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginBottom="94dp"
-        android:text="Resultat"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="180dp"
+        android:text="Resultat 1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/analyse" />
+
+    <TextView
+        android:id="@+id/Resultat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="180dp"
+        android:text="Resultat 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Resultat" />
+
+    <TextView
+        android:id="@+id/Resultat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="180dp"
+        android:text="Resultat 3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Resultat2" />
+
+    <TextView
+        android:id="@+id/Resultat4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="180dp"
+        android:text="Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Resultat3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
