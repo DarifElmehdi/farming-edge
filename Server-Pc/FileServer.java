@@ -31,6 +31,9 @@ public class FileServer {
           String imgname = dis.readUTF();
           String result = dis.readUTF();
           String time = dis.readUTF();
+          String lat = dis.readUTF();
+          String lng =  dis.readUTF();
+          String label = dis.readUTF();
           // receive file
           byte [] mybytearray  = new byte [FILE_SIZE];
           InputStream is = sock.getInputStream();
@@ -49,6 +52,8 @@ public class FileServer {
           bos.flush();
           System.out.println("File " + imgname + " downloaded (" + current + " bytes read)");
           System.out.println("Test result :"+result+"\n"+"Found in :"+time);
+          System.out.println("Device Location:Latitude "+lat+" & Longitude :"+lng);
+          System.out.println("Adresse name :"+label);
         }
         finally {
         if (fos != null) fos.close();
